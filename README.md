@@ -42,7 +42,7 @@ videoCaptureObject=cv2.VideoCapture(0)
 while True:
     ret,frame=videoCaptureObject.read()
     cv2.imshow('vedio rolling',frame)
-    cv2.imwrite("vedio rolling.jpg",frame)
+    cv2.imwrite("vedio.jpg",frame)
     if cv2.waitKey(1)==ord('q'):
         break
 videoCaptureObject.release()
@@ -125,13 +125,13 @@ cv2.destroyAllWindows()
 ## Output
 
 ### i) Write the frame as JPG image
-![output](vedio rolling.jpg)
+![output](vedio.png)
 </br>
 </br>
 
 
 ### ii) Display the video
-![output](Frame.jpg)
+![output](Frame.png)
 </br>
 </br>
 
@@ -144,7 +144,7 @@ cv2.destroyAllWindows()
 
 
 ### iv) Rotate and display the video
-![output](frame2.jpg)
+![output](frame2.png)
 </br>
 </br>
 
